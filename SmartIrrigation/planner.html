@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Irrigation Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        🌱 Smart Irrigation
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="planner.html" class="active">Planner</a>
+        <a href="about.html">How It Works</a>
+    </nav>
+
+</header>
+
+
+<section class="planner">
+
+    <div class="planner-heading">
+
+        <p class="tagline">
+            SMART IRRIGATION PLANNER
+        </p>
+
+        <h1>
+            Create Your Irrigation Schedule 💧
+        </h1>
+
+        <p>
+            Enter your crop and field details.
+            Our system also checks the current weather forecast.
+        </p>
+
+    </div>
+
+
+    <div class="form-card">
+
+        <label for="crop">
+            🌾 Crop Type
+        </label>
+
+        <select id="crop">
+
+            <option value="">
+                Select Crop
+            </option>
+
+            <option value="rice">
+                Rice
+            </option>
+
+            <option value="maize">
+                Maize
+            </option>
+
+            <option value="groundnut">
+                Groundnut
+            </option>
+
+        </select>
+
+
+        <label for="stage">
+            🌱 Growth Stage
+        </label>
+
+        <select id="stage">
+
+            <option value="">
+                Select Growth Stage
+            </option>
+
+            <option value="initial">
+                Initial Stage
+            </option>
+
+            <option value="vegetative">
+                Vegetative Stage
+            </option>
+
+            <option value="flowering">
+                Flowering Stage
+            </option>
+
+            <option value="maturity">
+                Maturity Stage
+            </option>
+
+        </select>
+
+
+        <label for="soil">
+            🪨 Soil Condition
+        </label>
+
+        <select id="soil">
+
+            <option value="">
+                Select Soil Condition
+            </option>
+
+            <option value="dry">
+                Dry
+            </option>
+
+            <option value="moist">
+                Moist
+            </option>
+
+            <option value="wet">
+                Wet
+            </option>
+
+        </select>
+
+
+        <label for="location">
+            📍 Location
+        </label>
+
+        <input
+            type="text"
+            id="location"
+            placeholder="Enter city or village"
+        >
+
+
+        <button onclick="generateSchedule()">
+
+            💧 Generate Irrigation Schedule
+
+        </button>
+
+
+        <div id="result" class="result">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer>
+
+    <p>
+        🌱 Smart Irrigation System | Hackathon Project
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
